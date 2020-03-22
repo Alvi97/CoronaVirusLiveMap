@@ -1,0 +1,18 @@
+#chartdiv{
+    height:400px;
+}
+
+.card-body{
+    padding: .25rem!important;
+}
+
+
+span{
+    font-weight: bold;
+}
+
+
+.copyright{
+margin-top: 10px;
+margin-left: 50px;
+}
