@@ -1,44 +1,48 @@
 <div>
   <div class="text-center">
-    <h3 class="display-4 text-center">Covid-19 real-time results </h3>
-    <p class="display-4 text-center">Last Updated in : <span>{{takenAt}}</span></p>
-      <div class="row">
-        <div class="col-sm">
-          <div class="card">
-            <h5 class="card-title">Total Cases</h5>
-            <div class="card-body">
-              {{totalCases}}
-            </div>
+    <h3 class="display-4 text-center">Covid-19 real-time results</h3>
+    <p class="display-4 text-center">
+      Last Updated in : <span>{{ takenAt }}</span>
+    </p>
+    <div class="row">
+      <div class="col-sm">
+        <div class="card">
+          <h5 class="card-title">Total Cases</h5>
+          <div class="card-body">
+            {{ totalCases }}
           </div>
         </div>
-        <div class="col-sm">
-          <div class="card">
-            <h5 class="card-title">Total Deaths</h5>
-            <div class="card-body">
-              {{totalDeaths}}
-            </div>
+      </div>
+      <div class="col-sm">
+        <div class="card">
+          <h5 class="card-title">Total Deaths</h5>
+          <div class="card-body">
+            {{ totalDeaths }}
           </div>
         </div>
-        <div class="col-sm">
-          <div class="card">
-            <h5 class="card-title">Total Recovered</h5>
-            <div class="card-body">
-              {{totalRecovered}}
-            </div>
+      </div>
+      <div class="col-sm">
+        <div class="card">
+          <h5 class="card-title">Total Recovered</h5>
+          <div class="card-body">
+            {{ totalRecovered }}
           </div>
         </div>
       </div>
     </div>
+  </div>
   <div id="chartdiv"></div>
-
-
 
   <div class="row text-center">
     <div class="col-12">
       <div class="card">
         <h5 class="card-title">Country:</h5>
         <div class="card-body">
-          <span *ngIf="totalCasesCountryName !== ' '"> {{totalCasesCountryName || 'Select A Country To View the Data'}}</span>
+          <span *ngIf="totalCasesCountryName !== ' '">
+            {{
+              totalCasesCountryName || "Select A Country To View the Data"
+            }}</span
+          >
         </div>
       </div>
     </div>
@@ -46,8 +50,9 @@
       <div class="card">
         <h5 class="card-title">Total Cases</h5>
         <div class="card-body">
-          <span *ngIf="totalCasesByCountry !== ' '"> {{totalCasesByCountry || '0'}}</span>
-         
+          <span *ngIf="totalCasesByCountry !== ' '">
+            {{ totalCasesByCountry || "0" }}</span
+          >
         </div>
       </div>
     </div>
@@ -55,7 +60,9 @@
       <div class="card">
         <h5 class="card-title">Total Deaths</h5>
         <div class="card-body">
-          <span *ngIf="totalDeathsByCountry !== ' '"> {{totalDeathsByCountry || '0'}}</span>
+          <span *ngIf="totalDeathsByCountry !== ' '">
+            {{ totalDeathsByCountry || "0" }}</span
+          >
         </div>
       </div>
     </div>
@@ -63,7 +70,9 @@
       <div class="card">
         <h5 class="card-title">Total Recovered</h5>
         <div class="card-body">
-          <span *ngIf="totalRecoveredByCountry !== ' '"> {{totalRecoveredByCountry || '0'}}</span>
+          <span *ngIf="totalRecoveredByCountry !== ' '">
+            {{ totalRecoveredByCountry || "0" }}</span
+          >
         </div>
       </div>
     </div>
@@ -73,6 +82,4 @@
       <h4>© Alvi Lika</h4>
     </div>
   </div>
-  
- 
 </div>
