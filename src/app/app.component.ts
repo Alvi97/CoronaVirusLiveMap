@@ -109,7 +109,7 @@ export class AppComponent implements OnInit {
         let test = [];
         test = data[Object.keys(data)[1]];
         console.log(test, "tesstasatastastat");
-        console.log ((Object.keys(test).length)-1);
+        console.log ((Object.keys(test).length)-1); 
         console.log(test[Object.keys(test)[test[(Object.keys(test).length)-1]]]);
         this.totalCasesByCountry = test[Object.keys(test)[(Object.keys(test).length)-1]].total_cases;
         this.totalDeathsByCountry = test[Object.keys(test)[(Object.keys(test).length)-1]].total_deaths;
