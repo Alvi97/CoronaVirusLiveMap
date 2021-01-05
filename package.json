@@ -22,7 +22,7 @@
     "@angular/platform-browser-dynamic": "~9.0.7",
     "@angular/router": "~9.0.7",
     "amexio-ng-extensions": "^5.20.4",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bootstrap": "^4.4.1",
     "fusioncharts": "^3.15.1-sr.1",
     "rxjs": "~6.5.4",
